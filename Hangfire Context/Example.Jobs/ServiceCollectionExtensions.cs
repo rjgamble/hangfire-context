@@ -6,6 +6,7 @@ namespace Example.Jobs
     {
         public static IServiceCollection AddExampleJobs(this IServiceCollection services)
         {
+            services.AddTransient<IExampleJob, ExampleJob>();
             services.AddScoped<IContextualDependency, ContextualDependency>();
 
             return services;

@@ -348,3 +348,7 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+Hangfire Context/Example.Client/appsettings.Development.json
+
+Hangfire Context/Example.Server/appsettings.Development.json

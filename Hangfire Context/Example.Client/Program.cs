@@ -52,7 +52,7 @@ app.UseHangfireDashboard();
 
 app.MapGet("/enqueue", (HttpContext context) =>
 {
-    var jobId = BackgroundJob.Enqueue<ExampleJob>(job => job.DoWork());
+    var jobId = BackgroundJob.Enqueue<IExampleJob>(job => job.DoWork());
 
     return new
     {

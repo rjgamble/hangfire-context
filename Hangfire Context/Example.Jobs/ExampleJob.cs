@@ -1,6 +1,6 @@
 ﻿namespace Example.Jobs
 {
-    public class ExampleJob
+    public class ExampleJob : IExampleJob
     {
         private readonly IContextualDependency _contextualDependency;
 
